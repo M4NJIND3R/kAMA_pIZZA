@@ -1,0 +1,606 @@
+body{margin: 0px !important}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Indie Flower', cursive;
+}
+
+
+select, p, option{
+  font-family: 'Satisfy', cursive;
+}
+
+
+a, button{
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+label{
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+/**header*******************************************************************************************************/
+
+/**handeling pages's top background image**/
+header > div{
+  display: flex;
+  height: 300px;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
+/*logo formatting*/
+header > div > img{
+  transition-duration: 400ms; /*duration of switching between hover and this*/
+  margin: 25px;
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0px 0px 25px 5px #7a3c0a ;
+}
+
+/*hover moder properties of logo*/
+header > div > img:hover{
+  transition-duration: 400ms;
+  box-shadow: 0px 0px 25px 5px #9a5c2a;
+}
+
+/**main heading of the page*/
+header > div > h1{
+  color: #ee7f22;
+  font-size: 70px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px;
+  margin-left: 20px;
+  align-self: center;
+  box-shadow: 0px 0px 7px 0px #ee7f22;
+}
+
+/*navigation bar*/
+header > nav > ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0px;
+  padding:0px;
+  font-size: 30px;
+}
+
+/* navigation list items formatting */
+header > nav > ul > li{
+  flex-grow: 1;
+  display: flex;
+}
+
+/*list items ancher tag formatting*/
+header > nav > ul > li >a{
+  flex-grow: 1;
+  text-decoration: none;
+  color: #ee7f22;
+  background-color: #7a3c0a;
+  padding: 4px 105px 0px 105px;
+
+}
+
+/* hover property of anchor tag in list item of nav unordered list */
+header > nav > ul > li > a:hover{
+  border-radius: 2px;
+  transition-duration: 400ms;
+  background-color: #ee7f22;
+  color: #7a3c0a;
+  box-shadow: 0px 5px 10px 0px #903022;
+}
+
+
+/** main***************************************************************************************************/
+
+main{
+  display: flex;
+  background-image: url('../img/addpatt.jpg');
+}
+
+/***main section********************************************************************************************/
+
+/*main content section of page*/
+main > section{
+  box-shadow: 0px 0px 20px 0px;
+  background-color: #ffffff ;
+  width: 70%;
+  margin: 200px 0px 200px 60px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Vegitarian and non Vegitarian secction of page*/
+main > section> section{
+  display: flex;
+  flex-direction: column;
+}
+
+/*heading of the two types of pizza sectios*/
+main > section > section h2{
+  background-color: rgba(243, 156, 18 , 0.8);
+  font-size: 50px;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+/* handeling different pizzas**/
+main > section > section > article{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 500px;
+}
+
+/*pizza discription*/
+main > section > section > article > div > p{
+  background-color: #F6DDCC;
+  padding: 5px;
+  border-radius: 20px;
+  align-self: center;
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*pizza names headings*/
+main > section > section > article > div > h3{
+  margin: 8px 0px 8px 0px;
+  font-size: 26px;
+  background-color: #F6DDCC;
+  width: 300px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/*add to cart link*/
+main > section > section > article > div >  button{
+  background-color: #ffffff;
+  color: #551a8b ;
+  border-color: #551a8b ;
+  transition-duration: 400ms;
+  text-decoration: none;
+  border-radius: 20px;
+  border-style: dashed;
+  border-width: medium;
+  padding: 3px;
+}
+
+/*hover peroperties odf button*/
+main > section > section > article > div >  button:hover{
+  background-color: #85C1E9;
+  transition-duration: 400ms;
+}
+
+/*form formatting*/
+main > section > section > article > div > form{
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 0px 0px 250px;
+}
+
+/*combo drop down box formatting*/
+main > section > section > article > div > form > select{
+  margin-right: 10px;
+}
+
+/*pizza images formatting*/
+main > section > section > article > div > img{
+  box-shadow: 0px 0px 10px 0px;
+  padding: 0px;
+  margin: 0px 10px 0px 10px;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+
+/**aside***********************************************************************************************************************************/
+
+/*box shadow for full aside tag*/
+main > aside{
+  box-shadow: 0px 0px 20px 0px ;
+  margin: 200px 60px 700px 30px;
+  width: 30%;
+  height: auto;
+}
+
+/*formating blocks in aside, color and measurements*/
+main > aside > div{
+  border: solid;
+  border-bottom: none;
+  border-color: #df624b;
+  height: 335px;
+  background-image: url('../img/cart.png');
+  display: flex;
+}
+
+/*formatting h3 headings*/
+main > aside > div > h3{
+  align-self: center;
+  padding-left: 5px;
+  font-size: 50px;
+  margin: 0px 55% 0px 5px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/*main content tag formatting 'delivery opyions'*/
+main > aside > div + article{
+  background-color: #ff826b;
+  border-left: solid;
+  border-color: #df624b;
+}
+
+/*setting up block for form*/
+main > aside > div + article > div{
+background-color: #ffd2bb;
+padding: 5px 0px 5px 0px;
+border-style: double;
+border-top-width: medium;
+border-color: #f26f58;
+border-radius: 30px;
+}
+/*formatting form*/
+main > aside > div + article > div > form{
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*formatting form items*/
+main > aside > div + article > div > form > div{
+  transition-duration: 250ms;
+  margin: 0px 4px 0px 4px;
+  display: flex;
+  padding: 5px 10px 5px 0px;
+  border-radius: 30px;
+}
+
+/*hover properties of the radio buttons delivery modes*/
+main > aside > div + article > div > form > div:hover{
+  transition-duration: 700ms;
+  box-shadow: 40px 40px 20px 40px #ef826b inset;
+  background-color: #ffd2bb;
+}
+
+/*image formatting*/
+main > aside > div + article > div > form > div > img{
+  box-shadow: 0px 0px 4px 0px #f26f58;
+  margin-left: 12px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+/*labels formatting*/
+main > aside > div + article > div > form > div > label{
+  color: #0000ff;
+  border-style: dashed;
+  border-color: #df624b;
+  border-width: medium;
+  margin-left: 5px;
+  padding: 2px;
+  align-self: center;
+}
+
+/*input fiels formatting*/
+main > aside > div + article > div > form > div > input{
+  align-self: center;
+}
+
+/*forma formatting in other block*/
+main > aside > div + article > div + div > form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*labels formatting of other block*/
+main > aside > div + article > div + div > form > label{
+  color: #0000ff;
+  border-style: dashed;
+  border-color: #df624b;
+  border-radius: 6px;
+  margin-left: 5px;
+  height: 20px;
+  width: 80px;
+  padding: 6px;
+  margin: 4px 0px 3px 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*labels formattin*/
+main > aside > div + article > div + div > form > label + input + input + input + input + input + label{
+  height: 20px;
+  width: 275px;
+  font-size: 20px;
+}
+
+/* input feilds formatting*/
+main > aside > div + article > div + div > form >input{
+  box-shadow: 0px 0px 4px 0px #f26f58;
+  width: auto;
+  margin: 2px 100px 2px 60px;
+  padding: 4px
+}
+
+/* input fieds formatting during hover*/
+main > aside > div + article > div + div > form >input:hover{
+  background-color: #ffe2eb;
+}
+
+/*textarea formatting*/
+main > aside > div + article > div + div > form > label + input + input + input + input + input + label + textarea{
+  margin: 2px 100px 2px 60px;
+  width: 300px;
+  padding: 4px;
+  resize: none;
+}
+
+/*botton formatting*/
+main > aside > div + article > div + div > form > label + input + input + input + input + input + label + textarea + input{
+  transition-duration: 300ms;
+  width: 150px;
+  height: 30px;
+  align-self: center;
+  border-style: none;
+  margin-top: 10px;
+  background-color: #f26f58 ;
+  box-shadow: 0px 0px 1px 0px ;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+/*hover foramtting of button order now*/
+main > aside > div + article > div + div > form > label + input + input + input + input + input + label + textarea + input:hover{
+  transition-duration: 400ms;
+  background-color: #fa2320;
+  color: #ffffff;
+}
+
+/*placement settings*/
+main > aside > div + article + div{
+  border-left-color: #df624b;
+  border-top: none;
+  margin: 0px;
+  height: auto;
+  display: inherit;
+}
+
+/*palcement settings and formatting or h3 hading*/
+main > aside > div + article + div > h3{
+  background-color: #ffd2bb;
+  padding: 10px;
+  font-size: 30px;
+  margin: 0px;
+  border-radius: 25px;
+  border-style: double;
+  border-color: #df624b;
+}
+
+/*list of other items to eat formatting*/
+main > aside > div + article + div > ul{
+  background-color: #ffd2bb;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 30px;
+  border-style: double;
+  border-color: #df624b;
+}
+
+/*formatting of burger,fires etc list items*/
+main > aside > div + article + div > ul > li{
+  width: 200px;
+  padding: 20px;
+  margin: 0px 30px 0px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/*formatting of and anchor tag in list items*/
+main > aside > div + article + div > ul > li > a{
+  align-self: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  border-style: dashed;
+  border-color: #df624b;
+  border-radius: 6px;
+}
+
+/*hover properties of anchor tag*/
+main > aside > div + article + div > ul > li > a:hover{
+  transition-duration: 700ms;
+  box-shadow: 40px 40px 20px 40px #ef826b inset;
+  background-color: #ffd2bb;
+  color: #ffffff;
+}
+
+/*iamge formatting*/
+main > aside > div + article + div > ul > li > img{
+  box-shadow: 0px 0px 3px 0px black;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+/*advertisements block formatting*/
+main > aside > div + article + div + div{
+  border-top: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+}
+
+/*blocks in advert section edditting*/
+main > aside > div + article + div + div > div{
+  flex-grow: 1;
+  background-color: #ff826b;
+  border-style: dotted;
+  border-width: thin;
+  display: flex;
+}
+
+/*text formatting in advertisements block*/
+main > aside > div + article + div + div > div > p{
+  margin: 60px 0px 0px 75px;
+  height: 50px;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 40px;
+}
+
+
+
+
+/** footer *************************************************************************************/
+
+footer{
+  box-shadow: 0px 0px 3px 2px #7a3c0a;
+  background-color: #7a3c0a;
+  display: flex;
+  flex-direction: column;
+}
+/*footer upper portion edditting*/
+footer > div {
+  border-radius: 15px;
+  background: #6a2c0a;
+  display: flex;
+  min-height: 150px;
+  align-self: center;
+}
+
+/*fotter lower portion peroperties*/
+footer > div + div{
+
+}
+
+/*formatting list containers in footer*/
+footer > div > div{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0px 50px 0px 50px;
+
+}
+
+/*footer list headings*/
+footer > div > div > h4{
+  margin-bottom: 5px;
+  color: #ee7f22;
+  box-shadow: 0px 0px 2px 0px #ee7f22;
+  height: 20px;
+  padding: 5px;
+}
+
+/*anchor tags in list formatting*/
+footer > div > div > ul > li >a{
+  transition-duration: 400ms;
+  margin: 2px 0px 0px 2px;
+  padding: 2px;
+  text-decoration: none;
+  color: #3d1e05;
+  font-weight: bold;
+}
+
+/*hover propertis of anchor tags*/
+footer > div > div > ul > li > a:hover{
+  transition-duration: 400ms;
+  border-radius: 15px;
+  background-color: #7a3c0a;
+}
+
+/*whole list block formatting*/
+footer > div > div > ul{
+  list-style: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+/* lower footer formatting*/
+footer > div + div {
+  border-radius: 0px;
+  align-self: center;
+  padding: 0px 33.9% 0px 33.5%;
+  height: 200px;
+  box-shadow: 0px -2px 20px 1px #401605;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+}
+
+/*logo*/
+
+footer > div + div > article{
+  display: flex;
+}
+
+/*article containing social media links of owner*/
+footer > div + div > article + article{
+  display: flex;
+}
+
+/*social media icons and tags*/
+footer> div + div > article + article > ul{
+  padding-left: 10px;
+  align-self: center;
+  margin-bottom: 26px;
+  height: 50px;
+  display: flex;
+  list-style: none;
+}
+
+/*heading social formatting*/
+footer> div + div > article + article > h4{
+  color: #ee7f22;
+  box-shadow: 0px 0px 2px 0px #ee7f22;
+  height: 20px;
+  padding: 5px;
+  margin-left: 15px;
+  align-self: center;
+}
+
+/*image social media foramtting*/
+footer> div + div > article + article > ul > li > a >img{
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 0px 10px 0px #c7447f;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/*social media icons shadow formating*/
+footer> div + div > article + article > ul > li + li > a >img{
+  box-shadow: 0px 0px 10px 0px #3b5998;
+}
+
+footer> div + div > article + article > ul > li + li + li > a >img{
+  box-shadow: 0px 0px 10px 0px #1da1f2;
+}
+
+footer> div + div > article + article > ul > li + li + li + li > a >img{
+  box-shadow: 0px 0px 10px 0px #25d366;
+}
+
+/*logo image formatting*/
+footer > div + div > article > img{
+  transition-duration: 400ms;
+  align-self: center;
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 15px 0px #7a3c0a ;
+}
+
+/*hover properties of logo image in footer*/
+footer > div + div > article > img:hover{
+  transition-duration: 400ms;
+  box-shadow: 0PX 0PX 10PX 0PX #9a5c2a;
+}
